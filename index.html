@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología en la Vida Real</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: #4e5bec;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #4e5bec;
+            margin: 20px 0 15px;
+            border-bottom: 2px solid #a777e3;
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            color: #6e8efb;
+            margin: 15px 0 10px;
+        }
+        
+        .intro {
+            padding: 25px;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        
+        .activity {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .scenarios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 25px 0;
+        }
+        
+        .scenario-card {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .scenario-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .scenario-header {
+            background: #6e8efb;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .scenario-content {
+            padding: 20px;
+            min-height: 200px;
+        }
+        
+        .solution-area {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            min-height: 120px;
+        }
+        
+        .timer {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 10px;
+            background: #4e5bec;
+            color: white;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .btn {
+            background: #4e5bec;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 10px 5px;
+        }
+        
+        .btn:hover {
+            background: #3a47bb;
+        }
+        
+        .notes {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 1rem;
+            min-height: 100px;
+        }
+        
+        .presentation-area {
+            background: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .emoji-showcase {
+            font-size: 4rem;
+            margin: 15px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .scenarios {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .scenario-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tecnología en la Vida Real</h1>
+            <p>Aplicando tus emojis del futuro a situaciones cotidianas</p>
+        </header>
+        
+        <section class="intro">
+            <h2>¡Ahora a aplicar vuestras creaciones!</h2>
+            <p>Ahora que ya habéis diseñado vuestros emojis del futuro, es momento de pensar cómo podrían aplicarse a situaciones reales. En esta actividad, trabajaréis en grupos para resolver problemas cotidianos usando vuestras creaciones tecnológicas.</p>
+        </section>
+        
+        <section class="activity">
+            <h2>Desafío: Resolución de Problemas con Tecnología</h2>
+            <p>Cada grupo elegirá uno de los siguientes escenarios y deberá:</p>
+            <ol>
+                <li>Seleccionar cuál de los emojis creados podría ayudar a resolver esta situación</li>
+                <li>Explicar cómo se utilizaría la tecnología representada por el emoji</li>
+                <li>Diseñar un plan breve de implementación</li>
+                <li>Preparar una presentación de 2 minutos para compartir con la clase</li>
+            </ol>
+            
+            <div class="scenarios">
+                <div class="scenario-card">
+                    <div class="scenario-header">Escenario 1</div>
+                    <div class="scenario-content">
+                        <h3>Problema de Comunicación</h3>
+                        <p>Un estudiante nuevo llega a la escuela. No conoce a nadie y le cuesta hacer amigos porque es muy tímido. ¿Cómo puede la tecnología ayudar?</p>
+                        <div class="solution-area">
+                            <textarea class="notes" placeholder="Escribe aquí tu solución..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-header">Escenario 2</div>
+                    <div class="scenario-content">
+                        <h3>Problema Ambiental</h3>
+                        <p>En el patio de la escuela siempre hay papeles y residuos en el suelo después del recreo. ¿Cómo puede la tecnología ayudar a mantener la escuela limpia?</p>
+                        <div class="solution-area">
+                            <textarea class="notes" placeholder="Escribe aquí tu solución..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-header">Escenario 3</div>
+                    <div class="scenario-content">
+                        <h3>Problema de Organización</h3>
+                        <p>Los estudiantes a menudo olvidan las fechas de entrega de trabajos y exámenes. ¿Cómo puede la tecnología ayudar con la organización escolar?</p>
+                        <div class="solution-area">
+                            <textarea class="notes" placeholder="Escribe aquí tu solución..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timer">Tiempo para esta actividad: 25 minutos</div>
+        </section>
+        
+        <section class="activity">
+            <h2>Prepara tu Presentación</h2>
+            <p>Ahora prepara una breve presentación para explicar al resto de la clase cómo tu emoji del futuro puede resolver el problema seleccionado.</p>
+            
+            <div class="presentation-area">
+                <h3>Nuestra Presentación</h3>
+                <div class="emoji-showcase">😊</div>
+                <textarea class="notes" placeholder="Escribe aquí los puntos clave de tu presentación..."></textarea>
+                <button class="btn">Simular Presentación</button>
+            </div>
+        </section>
+        
+        <section class="activity">
+            <h2>Reflexión Final</h2>
+            <p>Después de escuchar todas las presentaciones, responde las siguientes preguntas:</p>
+            
+            <textarea class="notes" placeholder="1. ¿Qué solución te pareció más creativa y por qué?"></textarea>
+            <textarea class="notes" placeholder="2. ¿Cómo puede la tecnología real ayudar con estos problemas hoy en día?"></textarea>
+            <textarea class="notes" placeholder="3. ¿Qué problema te gustaría resolver con tecnología en tu vida diaria?"></textarea>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <button class="btn">Enviar respuestas</button>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Clase de Tecnología - Primero de Secundaria</p>
+            <p>© 2023 - Diseñado para aplicar la tecnología a problemas reales</p>
+        </footer>
+    </div>
+
+    <script>
+        // Funcionalidad para los botones
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const action = this.textContent;
+                
+                switch(action) {
+                    case 'Simular Presentación':
+                        alert('¡Excelente! Ahora presenta tu solución a la clase. Tienes 2 minutos.');
+                        break;
+                    case 'Enviar respuestas':
+                        alert('¡Respuestas enviadas al profesor! Gracias por participar.');
+                        break;
+                }
+            });
+        });
+        
+        // Funcionalidad para las áreas de texto
+        document.querySelectorAll('.solution-area textarea').forEach(textarea => {
+            textarea.addEventListener('focus', function() {
+                this.parentElement.style.backgroundColor = '#e6f7ff';
+            });
+            
+            textarea.addEventListener('blur', function() {
+                this.parentElement.style.backgroundColor = '#f9f9f9';
+            });
+        });
+    </script>
+</body>
+</html>
